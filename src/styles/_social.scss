@@ -1,0 +1,39 @@
+.social__list {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.social__link {
+  display: block;
+}
+
+.social__link svg {
+  color: $grey;
+  transition: color .2s ease-in-out;
+
+  &:focus {
+    outline: none;
+    color: $white;
+  }
+
+  &:hover {
+    color: $primary;
+  }
+
+  &:active {
+    color: $primary-shade;
+  }
+}
+
+.social__link:focus path {
+  fill: $primary-light;
+}
+
+@media (max-width: 1023px) {
+  .social__list {
+    margin-bottom: 0;
+  }
+}

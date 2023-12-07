@@ -1,0 +1,58 @@
+.special {
+  margin-bottom: 70px;
+}
+
+.special__container {
+  @include desktop-container;
+  position: relative;
+}
+
+.special__title {
+  margin: 0;
+  margin-bottom: 26px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 100%;
+  color: $black;
+}
+
+.special__card--middle {
+  grid-column: 2 / 4;
+}
+
+@media (max-width: 1280px) {
+  .special__container {
+    @include tablet1-container;
+  }
+
+  .special__card {
+    width: 296px;
+    height: 511px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .special__container {
+    @include tablet2-container;
+  }
+
+  .special__card {
+    width: 296px;
+    height: 511px;
+  }
+}
+
+@media (max-width: 767px) {
+  .special__container {
+    @include mobile-container;
+  }
+
+  .special__title {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .special__slider {
+    padding-bottom: 50px;
+  }
+}

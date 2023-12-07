@@ -1,0 +1,689 @@
+@media (max-width: 1390px) {
+    .container {
+        max-width: 963px;
+    }
+    .header {
+        &__container {
+            padding: 25px 0;
+        }
+        &__logo {
+            margin-right: 84px;
+        }
+    }
+    .nav__item {
+        margin-right: 33px;
+    }
+    .hero {
+        padding: 34px 0 65px 0;
+        &__title {
+            font-size: 34px;
+        }
+        &__descr {
+            margin-bottom: 9px;
+        }
+    }
+    .hero-grid {
+        grid-template-rows: minmax(405px, auto);
+        grid-auto-rows: minmax(186px, auto);
+        &__img {
+            height: 186px;
+        }
+        &__head-item {
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 34px;
+            background-image: url("../resorces/images/photo_camera_1024.jpg");
+        }
+        &__subhead-item {
+            padding-bottom: 341px;
+            background-image: url("../resorces/images/girl1_1024.jpg");
+        }
+    }
+    .about {
+        padding-bottom: 82px;
+        &__form {
+            background-image: url("../resorces/images/photo_camera_atelier_1024.jpg");
+            padding-top: 352px;
+        }
+        &__input {
+            width: 343px;
+            margin-bottom: 24px;
+        }
+        &__input-wrapper {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+    .project {
+        &__list {
+            grid-template-columns: repeat(24, 1fr);
+            grid-template-rows: 285px;
+            grid-auto-rows: minmax(307px, auto);
+            gap: 24px;
+        }         
+        &__item {
+            grid-column: span 6;
+        }
+        &__item:nth-child(3) {
+            grid-column: span 12;
+        }
+        & .item-big {
+            grid-column: span 15;
+        }
+        & .item-medium {
+            grid-column: span 9;
+        }
+        &__article-title {
+            -webkit-line-clamp: 2;
+        }
+        & .item-medium &__article-title {
+            -webkit-line-clamp: 3;
+        }
+        &__article-big {
+            padding: 29px 308px 33px 30px;
+        }
+        .project-photo-1 {
+            background-image: url("../resorces/images/project_landscape_1024.jpg");
+        }
+        .project-photo-2 {
+            background-image: url("../resorces/images/project_portrait_1024.jpg");
+        }
+        .project-photo-3 {
+            background-image: url("../resorces/images/project_object_1024.jpg");
+        }
+        .project-photo-4 {
+            background-image: url("../resorces/images/project_semantics_1024.jpg");
+        }
+        .project-photo-5 {
+            background-image: url("../resorces/images/project_oblivion_1024.jpg");
+        }
+        .project-photo-6 {
+            background-image: url("../resorces/images/project_retouch_1024.jpg");
+        }
+        .project-photo-7 {
+            background-image: url("../resorces/images/project_girl_1024.jpg");
+        }
+    }
+    section.project > div > ul > li:nth-child(5) {
+        order: 1;
+    }
+    .contacts {
+        &__grid {
+            display: grid;
+            grid-template-columns: repeat(24, 1fr);
+            grid-auto-rows: minmax(460px, auto);
+            gap: 30px;
+        }
+        &__map-wrapper {
+            padding-top: 303px;
+            grid-column: span 15;
+        }
+        &__form {
+            grid-column: span 9;
+        }
+        &__address {
+            padding: 20px 50px 20px 30px;
+            width: 100%;
+            min-height: 100%;
+            top: auto;
+        }
+        &__tel {
+            justify-self: flex-start;
+        }
+    }
+    .footer {
+        &__logo-wrapper {
+            margin-right: 137px;
+        }
+        &__descr {
+            margin-right: 68px;
+        }
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .container {
+        max-width: 714px;
+    }
+    .header {
+        position: relative;
+        &__container {
+            flex-wrap: wrap;
+            padding: 27px 0;
+            padding-bottom: 0;
+        }
+        &__nav {
+            width: 100%;
+        }
+        &__logo {
+            margin-bottom: 34px;
+        }
+        &__search-wrapper {
+            top: 26px;
+            right: 0;
+            transform: translate(0, 0);
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            background-color: $default-4;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 80px;
+        }
+    }
+    .nav {
+        z-index: 2;
+        &__list {
+            width: 100%;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        &__item {
+            margin: 0;
+            margin-right: 11px;
+            margin-bottom: 11px;
+        }
+    }
+    .hero-grid {
+        grid-template-rows: minmax(289px, auto);
+        grid-auto-rows: minmax(133px, auto);
+        &__img {
+            height: 133px;
+        }
+        &__head-item {
+            background-image: url("../resorces/images/photo_camera_768.jpg");
+        }
+        &__subhead-item {
+            padding-bottom: 240px;
+            background-image: url("../resorces/images/girl1_768.jpg");
+        }
+        &__hash {
+            top: 18px;
+        }
+    }
+    .hero {
+        &__subtitle {
+            font-size: 22px;
+        }
+        &__title {
+            font-size: 33px;
+            margin-bottom: 17px;
+        }
+    }
+    .about {
+        padding-bottom: 63px;
+        &__form {
+            background-image: url("../resorces/images/photo_camera_atelier_768.jpg");
+            padding-top: 591px;
+        }
+    }
+    .project {
+        padding-bottom: 71px;
+        &__list {
+            grid-template-rows: 300px;
+            grid-auto-rows: minmax(303px, auto);
+        }
+        &__item {
+            grid-column: span 8;
+        }
+        &__item:nth-child(3) {
+            grid-column: span 8;
+        }
+        .project-photo-3 {
+            background-image: url("../resorces/images/project_object_768.jpg");
+        }
+        .project-photo-4 {
+            background-image: url("../resorces/images/project_semantics_768.jpg");
+        }
+        & .item-big {
+            grid-column: span 24;
+        }
+        & .item-medium {
+            grid-column: span 12;
+        }
+        &__hash {
+            top: 5px;
+            right: 7px;
+        }
+        &__article-big {
+            padding: 32px 392px 33px 30px;
+        }
+    }
+    .contacts {
+        padding-bottom: 52px;
+        &__grid {
+            gap: 25px;
+        }
+        &__map-wrapper {
+            grid-column: span 24;
+        }
+        &__address {
+            padding: 20px 232px 20px 30px;
+            width: 100%;
+            min-height: 100%;
+            top: auto;
+        }
+        &__form {
+            grid-column: span 16;
+        }
+        &__form-title {
+            margin-bottom: 7px;
+        }
+    }
+    .footer__descr {
+        display: none;
+    }
+    .footer__container {
+        justify-content: space-between;
+    }
+}
+
+
+@media (max-width: 766px) {
+    .container {
+        max-width: 490px;
+    }
+    .header__search-input {
+        width: 278px;
+    }
+    .hero {
+        padding: 34px 0 65px 0;
+        &__title {
+            font-size: 24px;
+            line-height: 110%;
+        }
+        &__descr {
+            font-size: 14px;
+            line-height: 16px;
+            margin-bottom: 9px;
+        }
+        &__subtitle {
+            font-size: 18px;
+            line-height: 115%;
+        }
+    }
+    .hero-grid {
+        grid-template-rows: minmax(268px, auto);
+        grid-auto-rows: minmax(124px, auto);
+        &__img {
+            width: 100%;
+            height: 100%;
+        }    
+        &__head-item {
+            background-image: url("../resorces/images/photo_camera.jpg");
+        }    
+        &__head-item {
+            background-size: 100% 100%;
+            grid-column: span 12;
+        }    
+        &__subhead-item {
+            background-size: 100% 90%;
+            grid-column: span 12
+        }    
+        &__item {
+            grid-column: span 6;
+        }
+    }
+    .about {
+        &__text {
+            grid-column: span 4;
+        }
+        &__form {
+            grid-column: span 4;
+            background-size: 100% 400px;
+            padding-top: 418px
+        }
+    }
+    .footer__logo-wrapper {
+        margin-right: 0;
+    }
+    .project {
+        &__list {
+            grid-template-columns: repeat(12, 1fr);
+            gap: 25px;
+        }         
+        &__item {
+            grid-column: span 4;
+        }
+        &__item:nth-child(3) {
+            grid-column: span 4;
+        }
+        & .item-big {
+            grid-column: span 12;
+        }
+        & .item-medium {
+            grid-column: span 6;
+        }
+        &__article-big {
+            padding: 30px;
+        }
+    }
+    .contacts {
+        &__grid {
+            grid-template-columns: repeat(12, 1fr);
+        }
+        &__map-wrapper {
+            padding-top: 316px;
+            grid-column: span 12;
+        }
+        &__form {
+            grid-column: span 12;
+        }
+        &__form-descr {
+            margin-bottom: 15px;
+        }
+        &__input, &__text-area {
+            padding: 12px 22px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+}
+
+
+@media (max-width: 530px) {
+    .container {
+        max-width: 278px;
+    }
+    .prim-button, 
+    .secondary-button {
+        padding: 12px 22px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .hash {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .title {
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .header {
+        &::after {
+            top: 70px;
+        }    
+        &__logo {
+            margin-bottom: 21px;
+        }
+    }
+    .hero {
+        padding: 30px 0 49px 0;
+    }
+    .search svg {
+        width: 20px;
+        height: 20px;
+    }
+    .burger {
+        height: 18px;
+        width: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        span {
+            background-color: $default-1;
+            width: 100%;
+            height: 2px;
+        }
+        span:last-child {
+            width: 50%;
+        }
+    }
+    .nav {
+        padding-top: 14px;
+        padding-bottom: 13px;
+        &__list {
+            display: flex;
+            flex-direction: column;
+            padding: 85px 20px 60px 20px;
+            align-items: flex-start;
+            justify-content: stretch;
+            background-color: $background-dark;
+            top: 0;
+            left: -101vw;
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            transform: translateX(0);
+           transition: 0.3s transform ease-in-out;
+        }
+
+        &__list--active {
+            transform: translateX(101vw);
+            transition: 0.3s transform ease-in-out;
+        }
+        &__item {
+            margin-bottom: 30px;
+        }
+        .tel-item {
+            position: absolute;
+            display: block;
+            bottom: 36px;
+        }
+        .close-x {
+            position: absolute;
+            top: 14px;
+            left: 21px;
+        }
+        .nav__item.display-none {
+            display: block;
+        }
+    }
+    .hero-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: minmax(422px, auto) minmax(240px, auto);
+        grid-auto-rows: minmax(105px, auto);
+        &__item {
+            grid-column: span 2;
+        }
+        &__img {
+            height: 105px;
+        }
+        &__head-item {
+            grid-column: span 4;
+            grid-row: span 1;
+            padding-left: 59px;
+            padding-right: 145px;
+            padding-bottom: 62px;
+            background-image: url("../resorces/images/photo_camera_320.jpg");
+            background-position: cover;
+            padding: 29px;
+        }
+        &__hashtag {
+            top: 4px;
+            right: 6px;
+            padding: 4px 7px;
+            font-size: 12px;
+        }
+        &__subhead-item {
+            grid-column: span 4;
+            grid-row: span 1;
+            background-size: contain;
+            background-position: bottom;
+            background-image: url("../resorces/images/girl1_320.jpg");
+            padding-bottom: 201px;
+        }
+    }
+    .about {
+        &__form {
+            background-size: contain;
+            background-image: url("../resorces/images/photo_camera_atelier_320.jpg");
+            padding-top: 293px;
+        }
+        &__input {
+            width: 100%;
+            margin-right: 0;
+        }
+        &__text {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 25px;
+        }
+        &__title-form{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+        }
+        &__input{
+            font-size: 14px;
+            line-height: 16px;
+            padding: 12px 20px;
+            margin-bottom:20px;
+        }
+    }
+    .project {
+        padding-top: 47px;
+        padding-bottom: 56px;
+        &__list {
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 278px;
+            grid-auto-rows: minmax(278px, auto);
+        }
+        &__item {
+            grid-column: span 4;
+        }
+        &__item:nth-child(3) {
+            grid-column: span 4;
+        }
+        & .item-big {
+            grid-column: span 4;
+            min-height: 422px;
+        }
+        & .item-medium {
+            grid-column: span 4;
+            min-height: 300px;
+        }
+        &__article-big {
+            padding: 204px 32px 24px 27px;
+        }
+        &__article-descr {
+            font-size: 14px;
+            line-height: 18px;
+        }        
+        .project-photo-1 {
+        background-image: url("../resorces/images/project_landscape_320.jpg");
+        }    
+        .project-photo-2 {
+        background-image: url("../resorces/images/project_portrait_320.jpg");
+        }    
+        .project-photo-3 {
+        background-image: url("../resorces/images/project_object_320.jpg");
+        }    
+        .project-photo-4 {
+        background-image: url("../resorces/images/project_semantics_320.jpg");
+        }    
+        .project-photo-5 {
+        background-image: url("../resorces/images/project_oblivion_320.jpg");
+        }    
+        .project-photo-6 {
+        background-image: url("../resorces/images/project_retouch_320.jpg");
+        }    
+        .project-photo-7 {
+        background-image: url("../resorces/images/project_girl_320.jpg");
+        }
+    }
+    .contacts {
+        padding-bottom: 48px;
+        &__title-address {
+            font-size: 18px;
+            line-height: 22px;
+        }
+        &__title {
+            margin-bottom: 12px;
+        }
+        &__grid {
+            grid-template-rows: minmax(472px, auto);
+            grid-auto-rows: minmax(429px, auto);
+        }
+        &__location {
+            margin-bottom: 11px;
+            font-size: 14px;
+            line-height: 18px;
+        }
+        &__title-address {
+            margin-bottom: 10px;
+        }
+        &__grid {
+            gap:18px;
+        }
+        &__tel {
+            font-size: 14px;
+            line-height: 18px;
+        }
+        &__address {
+            padding: 27px 21px 21px 19px;
+            width: 100%;
+            min-height: 100%;
+            top: auto;
+        }
+        &__form-title {
+            font-size: 18px;
+            line-height: 22px;
+        }
+        &__form-descr {
+            font-size: 14px;
+            line-height: 18px;
+        }
+        &__text-area {
+            padding-bottom: 40px;
+        }
+    }
+    .footer {
+        position: relative;
+        background-color: #202020;
+        padding-top: 31px;
+        padding-bottom: 88px;
+        &__container {
+            justify-content: center;
+        }
+        &__logo-wrapper {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 12px;
+            padding-top: 13px;
+            background-color: $default-4;
+            div {
+                font-size: 10px;
+                line-height: 13px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 390px) {
+    .contacts {
+        &__container {
+            max-width: 100%;
+        }
+        &__title {
+            max-width: 278px;
+            margin: 0 auto;
+            margin-bottom: 12px;
+        }        
+        &__form {
+            max-width: 278px;
+            margin: 0 auto; 
+        }
+    }
+    .project {
+        &__hashtag {
+            top: 7px;
+            right: 5px;
+            padding: 4px 10px;            
+        }
+        &__article-small {
+            padding-top: 207px;            
+        }
+    }
+}

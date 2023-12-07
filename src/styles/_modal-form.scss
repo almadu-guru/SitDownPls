@@ -1,0 +1,56 @@
+.modal-form__title {
+  font-size: 32px;
+  line-height: 32px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.modal-form__subtitle {
+  margin: 0;
+  font-size: 14px;
+  line-height: 19px;
+  max-width: 374px;
+  margin-bottom: 30px;
+}
+
+.modal-form__input {
+  display: block;
+  width: 100%;
+  padding: 7px 0 7px 18px;
+  margin-bottom: 30px;
+  border: none;
+  background-color: #f6f6f6;
+  border-radius: 10px;
+  color: #333;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  @include font-opensans;
+}
+
+.modal-form__btn {
+  margin-bottom: 12px;
+}
+
+.modal-form__success {
+  display: none;
+  padding-top: 237px;
+  padding-bottom: 88px;
+  background-image: url("images/elephant.svg");
+  background-position: center top 88px;
+  background-repeat: no-repeat;
+}
+
+.modal-form__success span {
+  font-size: 32px;
+  line-height: 32px;
+  display: block;
+  text-align: center;
+}
+
+@media (min-width: 767px) {
+  .modal-form__title {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}

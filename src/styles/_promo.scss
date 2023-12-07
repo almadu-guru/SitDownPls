@@ -1,0 +1,110 @@
+.promo {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  padding: 155px 0 148px;
+  padding-left: 16.8%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.promo__text {
+  max-width: 505px;
+  margin-bottom: 51px;
+}
+
+.promo::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 600px;
+  background-image: url("images/oxford-d.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -50;
+}
+
+.promo__title {
+  @include font-playfair;
+  margin-bottom: 0;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 120%;
+  color: $gold;
+}
+
+.promo__descr {
+  @include font-opensans;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 57px;
+  color: $white;
+}
+
+.promo__btn {
+  padding: 23px 33px;
+}
+
+@media (max-width: 1280px) {
+  .promo {
+    padding: 150px 0 150px 36px;
+  }
+
+  .promo::before {
+    background-image: url("images/oxford-t1.webp");
+  }
+}
+
+@media (max-width: 1023px) {
+  .promo {
+    padding-top: 152px;
+  }
+
+  .promo::before {
+    background-image: url("images/oxford-t2.webp");
+  }
+
+  .promo__btn {
+    padding: 21px 31px;
+  }
+}
+
+@media (max-width: 767px) {
+  .promo {
+    padding: 30px 12px 5px 12px;
+    height: auto;
+    background-size: auto;
+    margin-bottom: 64px;
+  }
+
+  .promo::before {
+    background-image: url("images/oxford-m.webp");
+    background-position: bottom;
+    height: 210px;
+  }
+
+  .promo__text {
+    margin-bottom: 141px;
+    max-width: 187px;
+  }
+
+  .promo__title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .promo__descr {
+    display: block;
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .promo__btn {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 296px;
+  }
+}

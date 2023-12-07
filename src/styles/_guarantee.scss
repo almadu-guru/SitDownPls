@@ -1,0 +1,85 @@
+.guarantee__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  margin-bottom: 12px;
+  color: $black;
+}
+
+.guarantee__list {
+  padding-left: 26px;
+}
+
+.guarantee__item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 180%;
+  color: $grey-shade;
+  margin-bottom: 12px;
+  max-width: 811px;
+}
+
+.guarantee__item:last-child {
+  margin-bottom: 0;
+}
+
+.guarantee__item::marker {
+  margin-right: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 180%;
+  color: $secondary;
+}
+
+.guarantee__time {
+  padding: 36px 0;
+  padding-left: 109px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-image: url("images/pencil.webp");
+}
+
+.guarantee__text {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  max-width: 515px;
+  color: $black;
+}
+
+@media (max-width: 1280px) {
+  .guarantee__time {
+    margin-bottom: 43px;
+  }
+}
+
+@media (max-width: 767px) {
+  .guarantee__title {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .guarantee__item {
+    font-size: 14px;
+    line-height: 25px;
+    margin-bottom: 9px;
+  }
+
+  .guarantee__time {
+    padding: 0;
+    padding-left: 52px;
+    background-size: 36px 54px;
+    background-position: left center;
+    margin-bottom: 70px;
+  }
+
+  .guarantee__text {
+    max-width: 188px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .guarantee__list {
+    margin-bottom: 32px;
+  }
+}

@@ -1,0 +1,60 @@
+.hystmodal__window--sofa {
+  width: 66%;
+  background-color: $white;
+  padding-top: 50px;
+  border-radius: 10px;
+}
+
+.hystmodal__img {
+  display: block;
+  margin: 0 auto;
+}
+
+.hystmodal__close {
+  top: 20px;
+  right: 20px;
+  background-image: url("images/close.svg")
+}
+
+.hystmodal__window--form {
+  width: 624px;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+@media (max-width: 1280px) {
+  .hystmodal__window--sofa {
+    width: 93%;
+  }
+
+  .hystmodal__img {
+    width: 821px;
+    height: 322px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .hystmodal__window--sofa {
+    width: 81%;
+  }
+
+  .hystmodal__img {
+    width: 583px;
+    height: 228px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hystmodal__window--sofa {
+    width: 92%;
+  }
+
+  .hystmodal__img {
+    width: 264px;
+    height: 104px;
+  }
+
+  .hystmodal__window--form {
+    width: 92%;
+  }
+}

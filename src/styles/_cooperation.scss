@@ -1,0 +1,49 @@
+.cooperation {
+  @include desktop-container;
+  margin-bottom: 41px;
+}
+
+.cooperation section {
+  max-width: 843px;
+}
+
+.cooperation__title {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 100%;
+  color: $black;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+@media (max-width: 1280px) {
+  .cooperation {
+    @include tablet1-container;
+  }
+
+  .cooperation .breadcrumps {
+    margin-bottom: 29px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .cooperation {
+    @include tablet2-container;
+  }
+}
+
+@media (max-width: 767px) {
+  .cooperation {
+    @include mobile-container;
+    padding-top: 25px;
+  }
+
+  .cooperation .breadcrumps {
+    display: none;
+  }
+
+  .cooperation__title {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}

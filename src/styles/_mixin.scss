@@ -1,0 +1,42 @@
+@import 'variables';
+
+@mixin desktop-container {
+  width: $desktop-container;
+  margin: 0 auto;
+}
+
+@mixin tablet1-container {
+  width: $tablet1-container;
+  margin: 0 auto;
+}
+
+@mixin tablet2-container {
+  width: $tablet2-container;
+  margin: 0 auto;
+}
+
+@mixin mobile-container {
+  width: $mobile-container;
+  margin: 0 auto;
+}
+
+@mixin font-opensans {
+  font-family: "Open Sans", sans-serif;
+}
+
+@mixin font-playfair {
+  font-family: "Playfair Display", sans-serif;
+}
+
+@mixin list-reset {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+@mixin btn-reset {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  outline: 0;
+}

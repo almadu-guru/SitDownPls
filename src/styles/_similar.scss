@@ -1,0 +1,52 @@
+@import 'mixin';
+@import 'variables';
+
+.similar {
+  margin-bottom: 70px;
+}
+
+.similar__container {
+  @include desktop-container;
+}
+
+.similar__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 130%;
+  color: $black;
+  margin-bottom: 24px;
+}
+
+.similar__card {
+  padding-top: 61px;
+  padding-left: 13px;
+  padding-right: 13px;
+}
+
+@media (max-width: 1280px) {
+  .similar__container {
+    @include tablet1-container;
+  }
+}
+
+@media (max-width: 1023px) {
+  .similar__container {
+    @include tablet2-container;
+  }
+}
+
+@media (max-width: 767px) {
+  .similar__container {
+    @include mobile-container;
+  }
+
+  .similar__card {
+    padding: 16px;
+    width: 140px;
+  }
+
+  .similar__card .card__img {
+    width: 108px;
+    height: 45px;
+  }
+}

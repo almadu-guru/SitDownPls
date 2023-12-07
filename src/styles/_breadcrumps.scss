@@ -1,0 +1,30 @@
+.breadcrumps {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.breadcrumps__link {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: $grey;
+}
+
+.breadcrumps__link--current {
+  color: $primary-shade;
+}
+
+@media (max-width: 1280px) {
+  .breadcrumps {
+    margin-bottom: 76px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .breadcrumps {
+    margin-bottom: 86px;
+  }
+}

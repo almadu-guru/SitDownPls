@@ -1,0 +1,152 @@
+.articles {
+  margin-bottom: 70px;
+}
+
+.articles__container {
+  @include desktop-container;
+}
+
+.articles__title {
+  margin-bottom: 26px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 100%;
+  color: $black;
+}
+
+.articles__slide {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 624px;
+  background-color: #F6F6F6;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.articles__img {
+  width: 624px;
+  height: 426px;
+  border-radius: 10px 10px 0px 0px;
+  background-repeat: no-repeat;
+}
+
+.articles__img1 {
+  background-image: url("images/art1-d.webp");
+}
+
+.articles__img2 {
+  background-image: url("images/art2-d.webp");
+}
+
+.articles__img3 {
+  background-image: url("images/art3-d.webp");
+}
+
+.articles__img4 {
+  background-image: url("images/art4-d.webp");
+}
+
+.articles__img5 {
+  background-image: url("images/art5-d.webp");
+}
+
+.articles__content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 250px;
+}
+
+.articles__descr {
+  margin: 0;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  color: $black;
+}
+
+.swiper-button-prev--articles {
+  position: absolute;
+  top: -3px;
+  right: 46px;
+  width: 32px;
+  height: 32px;
+}
+
+.swiper-button-next--articles {
+  position: absolute;
+  top: -3px;
+  right: 0;
+  width: 32px;
+  height: 32px;
+}
+
+@media (max-width: 1280px) {
+  .articles__container {
+    @include tablet1-container;
+  }
+
+  .articles__img1 {
+    background-image: url("images/art1-m.webp");
+  }
+
+  .articles__img2 {
+    background-image: url("images/art2-m.webp");
+  }
+
+  .articles__img3 {
+    background-image: url("images/art3-m.webp");
+  }
+
+  .articles__img4 {
+    background-image: url("images/art4-m.webp");
+  }
+
+  .articles__img5 {
+    background-image: url("images/art5-m.webp");
+  }
+
+  .articles__slide {
+    width: 296px;
+  }
+
+  .articles__img {
+    width: 296px;
+    height: 202px;
+  }
+
+  .articles__descr {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .articles__container {
+    @include tablet2-container;
+  }
+
+  .articles {
+    margin-bottom: 72px;
+  }
+}
+
+@media (max-width: 767px) {
+  .articles {
+    margin-bottom: 68px;
+  }
+
+  .articles__container {
+    @include mobile-container;
+  }
+
+  .articles__title {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .articles__slider {
+    padding-bottom: 54px;
+  }
+}

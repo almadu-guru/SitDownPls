@@ -1,0 +1,122 @@
+.header-form {
+  position: relative;
+}
+
+.header-form__input {
+  padding: 20px 0 20px 66px;
+  border: 1px solid transparent;
+  background-color: $grey-light;
+  width: 761px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: $black;
+  border-radius: 10px 0px 0px 10px;
+
+  &:focus {
+    outline: none;
+    background-color: $pink-light;
+    border: 1px solid $primary;
+  }
+
+  &:hover {
+    background-color: $md-grey;
+  }
+
+  &:active {
+    background-color: $white;
+    border: 1px solid $md-grey;
+  }
+
+  @media (max-width: 1280px) {
+    width: 652px;
+    padding: 20px 0 20px 58px;
+  }
+}
+
+.header-form__input-wrap {
+  position: relative;
+}
+
+.header-form__input-wrap::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 32px;
+  width: 20px;
+  height: 20px;
+  background-image: url("images/search-grey.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.header-form__input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: $grey;
+}
+
+.header-form__search-btn {
+  @include btn-reset;
+  position: absolute;
+  right: 4%;
+  top: 20%;
+
+  &:focus circle {
+    outline: none;
+    stroke: $primary;
+    fill: $primary-light;
+  }
+
+  &:focus path {
+    outline: none;
+    stroke: $white;
+  }
+
+  &:hover circle {
+    fill: $primary;
+  }
+
+  &:hover path {
+    stroke: $white;
+  }
+
+  &:active circle {
+    fill: $primary-shade;
+    stroke: $primary-shade;
+  }
+
+  &:active path {
+    stroke: $white;
+  }
+}
+
+@media (max-width: 1280px) {
+  .header-form__search-btn {
+    right: 5%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .header-form__input {
+    width: 435px;
+  }
+
+  .header-form__search-btn {
+    right: 7%;
+    top: 17%;
+  }
+}
+
+@media (max-width: 767px) {
+  .header-form__input {
+    width: 296px;
+    border-radius: 10px !important;
+  }
+
+  .header-form__search-btn {
+    right: 11%;
+    top: 18%;
+  }
+}

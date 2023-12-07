@@ -1,0 +1,72 @@
+.ad {
+  width: 296px;
+}
+
+.ad__content {
+  background-color: $black;
+  padding: 30px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.ad__title {
+  @include font-playfair;
+  margin-bottom: 0;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: $gold;
+  max-width: 200px;
+}
+
+.ad__text {
+  display: block;
+  @include font-opensans;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $grey;
+  max-width: 200px;
+  margin-bottom: 12px;
+}
+
+.ad__link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  text-decoration: none;
+  color: $primary;
+
+  &:focus circle {
+    outline: none;
+    stroke: $primary;
+    fill: $primary-light;
+  }
+
+  &:focus path {
+    outline: none;
+    stroke: $white;
+  }
+
+  &:hover circle {
+    fill: $primary;
+  }
+
+  &:hover path {
+    stroke: $white;
+  }
+
+  &:active circle {
+    fill: $primary-shade;
+    stroke: $primary-shade;
+  }
+
+  &:active path {
+    stroke: $white;
+  }
+}
+
+.ad__img {
+  min-height: 190px;
+  background-image: url("images/oxford-catalog.webp");
+  background-repeat: no-repeat;
+}

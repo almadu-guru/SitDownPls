@@ -1,0 +1,47 @@
+@import 'mixin';
+@import 'variables';
+
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  padding: 30px 0;
+}
+
+.modal__wrap {
+  padding: 267px 75px 122px 75px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  width: 624px;
+  min-height: 421px;
+  margin: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  z-index: 100;
+}
+
+.modal__success-message {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 100%;
+  color: $black;
+}
+
+.modal--success {
+  background-image: url("images/elephant.svg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,52 @@
+.opportunities {
+  margin-bottom: 32px;
+}
+
+.opportunities__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  margin-bottom: 12px;
+  color: $black;
+}
+
+.opportunities__list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.opportunities__first-title,
+.opportunities__second-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: $secondary;
+  margin-bottom: 12px;
+}
+
+.opportunities__first-info,
+.opportunities__second-info {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 180%;
+  color: $grey-shade;
+}
+
+@media (max-width: 767px) {
+  .opportunities__title {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .opportunities__first-title,
+  .opportunities__second-title {
+    line-height: 22px;
+  }
+
+  .opportunities__first-info,
+  .opportunities__second-info {
+    font-size: 14px;
+    line-height: 25px;
+    margin-bottom: 10px;
+  }
+}
